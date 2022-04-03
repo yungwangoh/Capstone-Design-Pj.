@@ -1,0 +1,16 @@
+<div class = "col-md-4">
+                    <form action = "#">
+                        <div class = "form-group">
+                            <input class = "form-control" id = "id" name = "username" type = "text" placeholder="ID">
+                        </div>
+                        <div class = "form-group">
+                            <input class = "form-control" id = "password" name = "password" type = "password" placeholder="password">
+                        </div>
+                        <div class = "form-group">
+                            <button type="submit" class="form-control btn btn-primary">로그인</button>
+                        </div>
+                        <div class = "form-group">
+                            <button type="button" class="form-control btn btn-primary" value = "user_regitser" onclick="location.href = './user_register.html'">회원 가입</button>
+                        </div>
+                    </form>
+                </div> 
