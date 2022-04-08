@@ -32,25 +32,38 @@
         
         <!--Log-in Section-->
         <section>
-            <div class = "col-md-4">
-                <form action = "#">
-                    <div class = "form-group">
-                        <input class = "form-control" id = "id" name = "username" type = "text" placeholder="ID">
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
+                    <div class="card card-signin my-5">
+                      <div class="card-body">
+                        <h2 class="card-title text-center mb-5">세종대병원</h2>
+                        <form class="form-signin" method="post" action="login">
+                            <div class="form-label-group mb-4 col-md-9 mx-auto">
+                                <input type="text" id="id" name="id" class="form-control" placeholder="아이디" required autofocus>
+                            </div>
+                
+                            <div class="form-label-group mb-4 col-md-9 mx-auto">
+                                <input type="password" id="pwd" name="pwd" class="form-control" placeholder="비밀번호" required autofocus>
+                            </div>
+                
+                            <div class="text-center mb-4">
+                                <button class="btn btn-lg btn-primary btn-block text-uppercase" type="submit">로그인</button>
+                            </div>
+
+                            <div class ="text-center mb-4">
+                                <h7>아직 회원이 아니시면, <a href="./user_register.html">이 링크를 클릭하여주십시오.</a></h7>
+                            </div>
+                        </form>
+                      </div>
                     </div>
-                    <div class = "form-group">
-                        <input class = "form-control" id = "password" name = "password" type = "password" placeholder="password">
-                    </div>
-                    <div class = "form-group">
-                        <button type="submit" class="form-control btn btn-primary">로그인</button>
-                    </div>
-                    <div class = "form-group">
-                        <button type="button" class="form-control btn btn-primary" value = "user_regitser" onclick="location.href = './user_register.html'">회원 가입</button>
-                    </div>
-                </form>
-            </div> 
-        </section>  
+                  </div>
+                </div>
+              </div>  
+        </section>
+
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
+        <footer class="py-5 bg-dark fixed-bottom">
             <div class="container px-5"><p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p></div>
         </footer>
         <!-- Bootstrap core JS-->
